@@ -7,7 +7,7 @@ import (
 )
 
 func GetSession() *mgo.Session {
-	s, err := mgo.Dial("mongodb://localhost:27017")
+	s, err := mgo.Dial({connectionLink})
 	if err != nil {
 		panic(err)
 	}
