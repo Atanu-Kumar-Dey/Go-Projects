@@ -5,10 +5,9 @@ import (
 	"book-store/pkg/utils"
 	"encoding/json"
 	"fmt"
+	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
-
-	"github.com/gorilla/mux"
 )
 
 var NewBook models.Books

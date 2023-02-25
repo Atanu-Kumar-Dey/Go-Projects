@@ -15,7 +15,7 @@ func Connect() {
 	d, err := gorm.Open("mysql", "root:Atanu@616@tcp(127.0.0.1:3306)/books?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
-	}else {
+	} else {
 		fmt.Println("Database connected successfully")
 	}
 	db = d
